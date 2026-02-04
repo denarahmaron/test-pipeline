@@ -2,7 +2,7 @@ name: CI Pipeline
 
 on:
   push:
-    branch: [main]
+    branches: [main]
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
     - name: set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: 20
 
     - name: Install dependencies
       run: npm install
